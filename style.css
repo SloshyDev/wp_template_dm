@@ -1,0 +1,667 @@
+/*
+* Theme Name: dM
+* Author: lnicanor  
+* Text Domain: dm
+* Domain Path: /English
+*/
+
+.splide__slide{
+  background-color: transparent !important;
+}
+.mx-a{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 1450px){
+	.nested #dropDownArrow{
+		border: 2px solid #1d7470;
+    border-radius: 6px;
+	margin-left:1vw;
+	margin-right:1vw;
+}
+}
+
+
+  body {
+    font-family: "MyriadPro", Arial, Helvetica, "sans-serif normal";
+  }
+  /* Button Scroll to top*/
+  #button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after,
+  #pdf::after {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 35px;
+    color: #fff;
+  }
+  #button::after {
+    font-size: 2em;
+    content: "\f077";
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Header */
+  #main-menu {
+    margin-top: -1vh;
+  }
+  .navbar-menu {
+    font-size: 14px;
+  }
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 256;
+  }
+  .intro {
+    position: relative;
+    opacity: 1;
+    background-color: white;
+    height: 100vh;
+  }
+  #logo {
+    width: 50%;
+    margin: auto;
+  }
+  .stopscrolling {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  /* Home */
+  #carousel-home,
+  #carousel-datakids,
+  .collaborators-container,
+  .carousel-diveAtlas1,
+  .carousel-diveAtlas,
+  .carousel-dataPub {
+    overflow: hidden;
+  }
+  .card_stories {
+    min-height: 16vh;
+  }
+  /* Stories */
+  .img-stories {
+    min-width: 300px;
+    min-height: 250px;
+  }
+  .fb-share-button {
+    display: inline-flex !important;
+  }
+  #pdf {
+    font-size: 0.5em;
+  }
+  /* Stories */
+  .stories_header img {
+    width: 550px;
+    height: 300px;
+  }
+  .stories_content img {
+    margin: 23px 18px;
+    width: 230px;
+    height: 215px;
+    float: left;
+    border: 5px solid #196360;
+    border-left: none;
+    border-right: none;
+  }
+  .stories p {
+    margin: 8px 6px;
+  }
+  @media screen and (max-width: 550px) {
+    .stories img {
+      float: none;
+    }
+  }
+  /* DataKids */
+  
+  #carousel-datakids .slider-navigation-next,
+  #carousel-datakids .slider-navigation-previous {
+    display: flex;
+    justify-content: end;
+    width: 210px;
+    height: 56px;
+    background-size: 48px 20px;
+    top: 40%;
+    background-color: white;
+    display: none;
+  }
+  #carousel-datakids .slider-navigation-next {
+    justify-content: flex-start !important;
+  }
+  #previousImg {
+    transform: rotate(180deg);
+  }
+  
+  .convocatoria {
+    flex: 1;
+  }
+  
+  #gallerry-dataKids::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  #gallerry-dataKids::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ffffff;
+  }
+  
+  #gallerry-dataKids::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.144);
+    background-color: #1f7470;
+  }
+  
+  .sc-name {
+    text-transform: initial;
+  }
+  
+  
+  .featherlight-gallery2 {
+    background: rgba(100, 100, 100, 0.5);
+  }
+  .featherlight-gallery2 .featherlight-content {
+    background: white;
+  }
+  .featherlight-gallery2 .featherlight-next:hover span,
+  .featherlight-gallery2 .featherlight-previous:hover span {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: -12.5px;
+    color: #196360;
+  }
+  /* Ficha Especie */
+  .ficha-especie img {
+    display: flex;
+    width: 60%;
+  }
+  .ficha-m img {
+    width: 36%;
+  }
+  .ficha-content {
+    display: flex;
+  }
+  .especie {
+    border-right: #377164 4px solid;
+  }
+  
+  /* Dive atlas*/
+  .dive .slider-navigation-previous {
+    right: 94%;
+  }
+  .dive .slider-navigation-next {
+    left: 94%;
+  }
+  
+  .dive .slider-navigation-next,
+  .dive .slider-navigation-previous {
+    width: 12vh;
+    height: 83px;
+    top: 50%;
+    margin-top: -45px;
+  }
+  
+  .da-multimedia .slider-navigation-previous {
+    left: -30px;
+  }
+  .da-multimedia .slider-navigation-next {
+    right: -30px;
+  }
+  .dive .cls-1 {
+    fill: #1e7571;
+  }
+  .slider-item {
+    display: flex;
+    justify-content: center;
+  }
+  .is-condensed {
+    font-family: "MyriadProC";
+  }
+  
+  .is-off {
+    margin-top: -49px;
+  }
+  .dive-tittle {
+    font-size: 7vh !important;
+  }
+  
+  .dive-Button {
+    position: relative;
+    background-image: linear-gradient(
+      to top,
+      hsl(176, 54%, 30%),
+      hsl(58, 68%, 47%)
+    );
+    z-index: 1;
+    height: 1.8em;
+    border-width: 0px;
+  }
+  
+  .dive-Button::before {
+    position: absolute;
+    border-radius: 4px;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(58, 68%, 47%),
+      hsl(58, 68%, 47%)
+    );
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+  }
+  .dive-Button:hover::before {
+    opacity: 1;
+  }
+  .dive-Button {
+    border-image: linear-gradient(to top, hsl(176, 54%, 30%), hsl(95, 36%, 44%))
+      100%;
+  }
+  .dv {
+    width: 30vh;
+  }
+  .dataP {
+    background-repeat: round;
+    background-size: cover;
+  }
+  
+  .dmLogo {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 3000;
+    background-color: hsla(0, 0%, 100%, 1);
+  }
+  
+  .fab-container {
+    display: block !important;
+  }
+  
+  .image_target {
+    z-index: 256;
+  }
+  .lupa {
+    transform: scale(2.1);
+    position: relative;
+    right: 128px;
+    top: 128px;
+  }
+  
+  .mostR {
+    font-family: "MyriadProB";
+    font-size: 1.5rem !important;
+  }
+  .mostRr {
+    color: white !important;
+  }
+  
+  .tableuButton {
+    width: 14rem;
+  }
+  .navTop {
+    display: none !important;
+  }
+  
+  .titleNews {
+    font-family: "MyriadProBoldCond";
+    font-size: 2.3vh !important;
+    text-align: left;
+    color: white;
+  }
+  .titleNews:hover {
+    text-decoration: underline #377164;
+    color: white;
+  }
+  
+  .subTitleNews {
+    font-family: "MyriadProB";
+    font-size: 0.9rem;
+    text-align: left;
+    color: #196360;
+  }
+  .newsButton:hover {
+    text-decoration: none !important;
+    text-shadow: 5px 5px 20px #00302e;
+  }
+  
+  .news {
+    border-radius: 17px;
+    border: 5px solid;
+    border-color: #00302e;
+    background: linear-gradient(
+      180deg,
+      hsla(175, 52%, 30%, 1) 0%,
+      hsla(58, 68%, 46%, 1) 99%
+    );
+  }
+  .news h3 {
+    color: #c6ce27 !important;
+    background-color: #00302e !important;
+  }
+  
+  .cursorNews {
+    position: relative;
+    top: 5rem;
+    right: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .cursorNews:hover {
+    transform: scale(1.1);
+  }
+  
+  .slick-next {
+    right: 40px !important;
+  }
+  .slick-prev {
+    z-index: 5;
+    left: 40px !important;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: "";
+  }
+  .draggable {
+    height: fit-content !important;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 25px;
+    height: 25px;
+  }
+  
+ 
+  .newsBotton{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10%;
+  }
+  
+  .cursorNews:hover {
+    transform: scale(1.1);
+  }
+  
+  .mostRecentImg {
+    box-shadow: 2px 5px 16px #303030;
+  }
+  
+  .seeMoreStories {
+    position: relative;
+    bottom: 0px;
+    width: 180px;
+    left: 45px;
+    height: fit-content;
+    top: -2vh;
+  }
+  .promoStory {
+    background-image: url(https://datamares.org/wp-content/uploads/2023/01/Asset-3@300x-1.png);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .dive-Buttons {
+      flex-direction: column;
+    }
+    .is-off {
+      margin-top: auto;
+    }
+    .dive-Button {
+      margin-left: 8vh !important;
+      margin-right: 8vh !important;
+    }
+    #carousel-datakids .slider-navigation-next,
+    #carousel-datakids .slider-navigation-previous {
+      width: 8vh;
+    }
+      .slick-prev,
+    .slick-next {
+      width: 22px;
+      height: 22px;
+    }
+      .newsBotton{
+              margin-top: 1vh;
+      }
+  }
+  @media screen and (max-width: 640px) {
+    .ficha-m img {
+      width: 85%;
+      margin: auto;
+    }
+    .ficha-content {
+      display: block;
+    }
+    .lupa {
+      transform: scale(2.2);
+      position: relative;
+      right: 83px;
+      top: 83px;
+    }
+      
+      .newsBotton{
+              margin-top: 2vh;
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .promoStory {
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          background-position: center;
+            height:44%;
+          margin-bottom: 2vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
+      .seeMoreStories{
+          left:0px !important;
+      }
+      .how-works{
+          margin-bottom: 15vh !important;
+      }
+  }
+  
+  @media screen and (max-width: 1407px) {
+    .titleNews,
+    .subTitleNews {
+      text-align: center !important;
+    }
+    .cursorNews {
+      position: inherit;
+    }
+  
+  }
+  
+  @media screen and (max-width: 930px) {
+    .seeMoreStories {
+      position: relative;
+      bottom: 0px;
+      width: 155px;
+      left: 36px;
+      height: fit-content;
+      top: 0vh;
+    }
+  }
+  
+  @media screen and (min-width: 1407px) {
+    .seeMoreStories {
+      position: relative;
+      bottom: 0px;
+      width: 230px;
+      left: 60px;
+      height: fit-content;
+      top: -3vh;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .navbar-end {
+      display: none !important;
+      flex-direction: row !important;
+    }
+    .navTop {
+      display: flex !important;
+    }
+  }
+
+
+@font-face {
+  font-family: 'Academy Engraved LET';
+  src: url('https://datamares.org/wp-content/uploads/2023/06/AcademyEngravedLetPlain.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+.isBold {
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.isRegular {
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.isSansExtraBold {
+  font-family: "OpenSansExtraBold";
+}
+
+.isCond {
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.isBoldCondensed {
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.isBlack {
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.isBlackCond {
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.isAcademy{
+  font-family: 'Academy Engraved LET', sans-serif;
+}
+
+.apexcharts-tooltip * {
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.apexcharts-tooltip-text-y-label {
+  display: none;
+}
+
+.apexcharts-canvas {
+  margin: auto;
+}
+
+.dark::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #111827;
+}
+
+.dark::-webkit-scrollbar {
+  width: 10px;
+  background-color: #111827;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #1f4c5c;
+}
+
+.summary::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #3d7b91;
+  border-radius: 10px;
+}
+
+.summary::-webkit-scrollbar {
+  width: 10px;
+  background-color: #3d7b91;
+  border-radius: 10px;
+}
+
+.summary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #4b5563;
+}
+
+#baultNews::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #00302e;
+  border-radius: 10px;
+}
+
+#baultNews::-webkit-scrollbar {
+  width: 10px;
+  background-color: #00302e;
+  border-radius: 10px;
+}
+
+#baultNews::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #4b5563;
+}
+
+.apexcharts-tooltip-text-y-value {
+  margin-left: 0px !important;
+}
+
+.apexcharts-tooltip-text {
+  margin: auto;
+}
+
+.apexcharts-menu-icon {
+  display: none;
+}
+
+#numeralia {
+  cursor: url('https://datamares.org/wp-content/uploads/2023/03/Group-23.svg'), auto;
+}
+
+.cursor-zoom {
+  cursor: url(../len.svg), zoom-in;
+}
+  
+  
