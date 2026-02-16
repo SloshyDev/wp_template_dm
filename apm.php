@@ -230,7 +230,8 @@
                         640: {
                             perPage: 1
                         }
-                    }
+                    },
+                    arrowPath: "M18.7778 4L36 20L18.7778 36M5 4L22.2222 20L5 36",
                 };
 
                 function mountSplide() {
