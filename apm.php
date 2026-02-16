@@ -116,11 +116,6 @@
                         </a>
                     </li>
                     <li class="splide__slide">
-                        <a href="https://pulitzercenter.org/stories/can-gulf-california-be-saved-cabo-pulmos-lesson-prosperity" target="_blank" rel="noopener noreferrer">
-                            <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2025/12/News2-N@1.5x.webp", 'dm') ?>" alt="">
-                        </a>
-                    </li>
-                    <li class="splide__slide">
                         <a href="<?php _e("https://especiales.eluniversal.com.mx/2025/prosperidad-marina/index-en.html", 'dm') ?>" target="_blank" rel="noopener noreferrer">
                             <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2025/12/News3-N@1.5x.webp", 'dm') ?>" alt="">
                         </a>
