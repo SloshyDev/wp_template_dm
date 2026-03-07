@@ -164,7 +164,7 @@
     <!-- Marquesina -->
     <div class="mx-auto flex flex-col justify-between gap-15w md:w-1/4">
         <div class="flex h-full flex-col justify-around rounded-lg border-4 border-blue-400 bg-blue-400 hover:scale-105 transition-transform">
-            <h1 class="my-12w text-center font-myriad text-2xl font-black text-yellow-100 md:text-16w is-uppercase"><?php echo _e('Latest News', 'dm'); ?></h1><a target="_blank" href="#" ><?php $image = get_field('marquesina-image') ?>
+            <h1 class="my-12w text-center font-myriad text-2xl font-black text-yellow-100 md:text-16w is-uppercase"><?php echo _e('Latest News', 'dm'); ?></h1><a target="_blank" href="https://elpais.com/mexico/2026-02-16/el-movimiento-de-cientificos-mexicanos-que-promueve-las-areas-de-prosperidad-marina.html" ><?php $image = get_field('marquesina-image') ?>
 <img width="447" height="387" class="w-full" src="<?php echo $image['url'] ?>" alt="" /></a>
         </div>
         <a href="<?php the_field('news-link') ?>" class="buttonLink block w-full text-xl md:text-14w bg-gradient-to-b from-secondary2 to-yellow" >
