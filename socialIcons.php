@@ -12,7 +12,7 @@ $iconTableu = get_field('icontableu', 'option');
             src="https://datamares.org/wp-content/uploads/2024/07/Asset-1-1.svg" alt="" aria-label='tableu'>
     </a>
     <a class="m-1 hover:scale-105 rounded-full shadow-sm hover:shadow-lg transition-transform" target="_blank"
-        href="mailto:catalina@gocmarineprogram.org" aria-label='gmail link'>
+        href="mailto:direccion@datamares.org" aria-label='gmail link'>
         <svg xmlns="http://www.w3.org/2000/svg" class='h-7 w-7' viewBox="0 0 18 18" fill="none">
             <path
                 d="M9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z"

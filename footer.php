@@ -6,7 +6,7 @@ $logo = get_field('logo','option');
         <a id="button" class="button is-info p-0 show"></a>
     <div class="column has-text-centered">
         <div class="p-0 is-flex is-justify-content-center is-align-item">
-            <a class="m-1 is-flex is-align-items-center" target="_blank" href="mailto:catalina@gocmarineprogram.org"><img class="social-links" src="https://datamares.org/wp-content/uploads/2021/05/gmail.svg" alt=""></a>
+            <a class="m-1 is-flex is-align-items-center" target="_blank" href="mailto:direccion@datamares.org"><img class="social-links" src="https://datamares.org/wp-content/uploads/2021/05/gmail.svg" alt=""></a>
             <a class="m-1 is-flex is-align-items-center" target="_blank" href="https://www.facebook.com/datamares/"><img class="social-links" src="https://datamares.org/wp-content/uploads/2021/05/facebook.svg" alt=""></a>
             <a class="m-1 is-flex is-align-items-center" target="_blank" href="https://twitter.com/dataMares"><img class="social-links" src="https://datamares.org/wp-content/uploads/2025/11/Group-4.png" alt=""></a>
             <a class="m-1 is-flex is-align-items-center" target="_blank" href="https://www.instagram.com/datamares_/"><img class="social-links" src="https://datamares.org/wp-content/uploads/2021/05/instagram.svg" alt=""></a>
@@ -20,7 +20,7 @@ $logo = get_field('logo','option');
     </div>
     <div class="column">
 		
-		<a href="mailto:catalina@gocmarineprogram.com" class="flex justify-center" target="_blank">
+		<a href="mailto:direccion@datamares.org" class="flex justify-center" target="_blank">
 		<img src="<?php _e("https://datamares.org/wp-content/uploads/2025/12/Recurso-1-1.svg", 'dm') ?>" style="width:19rem" />
 		</a>
        

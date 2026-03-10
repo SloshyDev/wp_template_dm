@@ -565,7 +565,7 @@ introduced species. ','dm'); ?>
 			<div class="group flex w-11/12 md:w-[42.604vw] cursor-pointer justify-center md:justify-start items-center gap-2 rounded-3xl bg-secondary4 py-4 shadow-lg px-4" style="
     width: 25vw; margin: auto;">
             <img width="77" height="77" class="hidden md:block w-[10vw] md:w-[4.010vw] transition-transform group-hover:scale-105" src="https://datamares.org/wp-content/themes/dM-v2/img/CaboPulmo/datos.svg" alt="" style="position: absolute;margin-left: -5vh;">
-				<a class='mx-auto' href='mailto:catalina@gocmarineprogram.org'><h1 class="MBlack text-[3.5vw] md:text-8xl text-gray-50 transition-colors group-hover:text-[#aeb521]" style="
+				<a class='mx-auto' href='mailto:direccion@datamares.org'><h1 class="MBlack text-[3.5vw] md:text-8xl text-gray-50 transition-colors group-hover:text-[#aeb521]" style="
     text-align: center;
 "><?php _e("REQUEST DATA", 'dm') ?></h1></a>
             
