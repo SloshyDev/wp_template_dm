@@ -1028,12 +1028,11 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         if (id === 't3') {
             tab2.classList.remove('hidden');
             tab2Title.classList.remove('hidden');
-            
         }else {
             tab2.classList.add('hidden');
             tab2Title.classList.add('hidden');
         }
-        $('#metTitle').text(tab2);
+        $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
     });
