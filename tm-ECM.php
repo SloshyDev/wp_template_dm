@@ -1050,8 +1050,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             tab1.style.width = '';
             $('#tab1').css('border-top-color', '#cacfd300 !important');
             t5.classList.add('hidden');
+             $('#metTitle').text(text);
         }
-        $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
     });
