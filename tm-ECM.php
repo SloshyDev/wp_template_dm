@@ -345,7 +345,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     <div class="flex  justify-between">
 <h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
         <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
-        <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
+        <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center cursor-pointer' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
         <div id="tab2" style="border-left-color: #cacfd3;"  class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
     </div>
     <img id='met1' class='metImg' src="<?php the_field('met1'); ?>" alt="">
@@ -1033,26 +1033,38 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 
     $('#tab1').css('border-left-color', '#4b626e !important');
 
-    $('.metButton').click(function() {
-        let text = $(this).find('.metText').text();
+    function setMethodologyState(id, text) {
+        let tab1 = document.getElementById('tab1');
         let tab2 = document.getElementById('tab2');
         let t5 = document.getElementById('t5');
-        let id = $(this).attr('id');
 
-        if (id === 't3') {
+        if (id === 't3' || id === 't5') {
             tab2.classList.remove('hidden');
             tab1.style.width = '0';
             $('#tab1').css('border-top-color', '#CACFD3 !important');
             t5.classList.remove('hidden');
-        }else {
+        } else {
             tab2.classList.add('hidden');
             tab1.style.width = '';
-             $('#tab1').css('border-top-color', '#cacfd300 !important');
+            $('#tab1').css('border-top-color', '#cacfd300 !important');
             t5.classList.add('hidden');
         }
+
         $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
+    }
+
+    $('.metButton').click(function() {
+        let id = $(this).attr('id');
+        let text = $(this).find('.metText').text();
+        setMethodologyState(id, text);
+    });
+
+    $('#t5').click(function() {
+        let id = 't5';
+        let text = $(this).text().trim();
+        setMethodologyState(id, text);
     });
 
     function ecologicalCS() {
