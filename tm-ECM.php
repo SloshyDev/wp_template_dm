@@ -1021,11 +1021,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
         let id = $(this).attr('id');
-        let titleText = text;
-        if (id === 't3') {
-            titleText = text + ' PCU';
-        }
-        $('#metTitle').text(titleText);
+        $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
     });
