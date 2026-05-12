@@ -1022,8 +1022,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
-        let tab2 = document.getElementById('t2');
-        let tab2Title = document.getElementById('metTitle');
+        let tab2 = document.getElementById('tab2');
+        let tab2Title = document.getElementById('tab2Title');
         let id = $(this).attr('id');
         if (id === 't3') {
             tab2.classList.remove('hidden');
