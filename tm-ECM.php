@@ -333,8 +333,10 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 <!-- METODOLOGY -->
 <section class='my-8 bg-[#4b626e]'>
     <div class="flex  justify-between pb-4">
-        <h1 id='metTitle' class='text-gray-50 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
-        <div class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
+<h1 id='metTitle' class='text-gray-50 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
+        <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
+        <h1 id='tab2Title' class='text-gray-50 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center hidden text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
+        <div id="tab2" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
     </div>
     <img id='met1' class='metImg' src="<?php the_field('met1'); ?>" alt="">
     <img id='met2' class='metImg hidden' src="<?php the_field('met2'); ?>" alt="">
@@ -1020,8 +1022,18 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
+        let tab2 = document.getElementById('t2');
+        let tab2Title = document.getElementById('metTitle');
         let id = $(this).attr('id');
-        $('#metTitle').text(text);
+        if (id === 't3') {
+            tab2.classList.remove('hidden');
+            tab2Title.classList.remove('hidden');
+            
+        }else {
+            tab2.classList.add('hidden');
+            tab2Title.classList.add('hidden');
+        }
+        $('#metTitle').text(tab2);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
     });
