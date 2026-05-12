@@ -1034,19 +1034,20 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         let text = $(this).find('.metText').text();
         let tab2 = document.getElementById('tab2');
         let tab2Title = document.getElementById('tab2Title');
+        $('#tab1').css('border-left-color', '#4b626e');
         let id = $(this).attr('id');
+
         if (id === 't3') {
             tab2.classList.remove('hidden');
             tab1.style.width = '0';
             $('#tab1').css('border-top-color', '#CACFD3');
-            $('#metTitle').css('width', '23vw');
             tab2Title.classList.remove('hidden');
         }else {
             tab2.classList.add('hidden');
-            $('#metTitle').css('width', 'auto');
             tab1.style.width = '';
              $('#tab1').css('border-top-color', 'transparent');
             tab2Title.classList.add('hidden');
+            tab2Title.style.width = '25vw';
         }
         $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
