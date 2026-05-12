@@ -1027,6 +1027,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         let id = $(this).attr('id');
         if (id === 't3') {
             tab2.classList.remove('hidden');
+            tab1.style.width = '0';
+            $('#metTitle').css('width', '23vw');
             tab2Title.classList.remove('hidden');
         }else {
             tab2.classList.add('hidden');
