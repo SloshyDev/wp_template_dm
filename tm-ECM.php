@@ -1043,8 +1043,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             $('#tab1').css('border-left-color', '#C5D2B6 !important');
             $('#metTitle').css('background-color', '#C5D2B6 !important');
         } else {
-            $('#tab1').css('border-left-color', '#cacfd300 !important');
-            $('#metTitle').css('background-color', '#cacfd300 !important');
+            $('#tab1').css('border-left-color', '#4b626e !important');
+            $('#metTitle').css('background-color', '#4b626e !important');
         }
 
         if (id === 't3' || id === 't5') {
