@@ -6,6 +6,16 @@
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ecologicalmonoring.css">
 
+<style>
+
+    .border-l-\[5rem\] {
+    border-left-width: 6rem !important;
+}
+.border-t-\[4rem\] {
+    border-top-width: 5rem !important;
+}
+</style>
+
 <?php
 $current_lang = ICL_LANGUAGE_CODE; ?>
 
@@ -333,7 +343,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 <!-- METODOLOGY -->
 <section class='my-8'>
     <div class="flex  justify-between">
-<h1 id='metTitle' class='text-gray-50  bg-[#4b626e] pb-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
+<h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
         <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
         <h1 id='tab2Title' class='text-gray-50 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center hidden text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
         <div id="tab2" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
@@ -1033,6 +1043,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             tab2Title.classList.remove('hidden');
         }else {
             tab2.classList.add('hidden');
+            $('#metTitle').css('width', 'auto');
+            tab1.style.width = '';
              $('#tab1').css('border-top-color', 'transparent');
             tab2Title.classList.add('hidden');
         }
