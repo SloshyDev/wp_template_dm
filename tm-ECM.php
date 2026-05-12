@@ -343,8 +343,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
 <!-- METODOLOGY -->
 <section class='my-8'>
     <div class="flex  justify-between">
-<h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
-        <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
+
+        <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div><h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center cursor-pointer' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
         <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center cursor-pointer' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
         <div id="tab2" style="border-left-color: #cacfd3;"  class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
     </div>
@@ -1037,13 +1037,6 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         let tab1 = document.getElementById('tab1');
         let tab2 = document.getElementById('tab2');
         let t5 = document.getElementById('t5');
-        let imageId = id;
-        let titleText = text;
-
-        if (id === 't5') {
-            imageId = 't3';
-            titleText = $('#t3 .metText').text().trim();
-        }
 
         if (id === 't3' || id === 't5') {
             tab2.classList.remove('hidden');
@@ -1057,15 +1050,20 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             t5.classList.add('hidden');
         }
 
-        $('#metTitle').text(titleText);
+        $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
-        $('#me' + imageId).removeClass('hidden');
+        $('#me' + id).removeClass('hidden');
     }
 
     $('.metButton').click(function() {
         let id = $(this).attr('id');
         let text = $(this).find('.metText').text();
         setMethodologyState(id, text);
+    });
+
+    $('#metTitle').click(function() {
+        let text = $('#t3 .metText').text().trim();
+        setMethodologyState('t3', text);
     });
 
     $('#t5').click(function() {
