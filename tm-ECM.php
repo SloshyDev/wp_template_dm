@@ -1045,7 +1045,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             tab2Title.classList.remove('hidden');
         }else {
             tab2.classList.add('hidden');
-            tab1.style.width = '0';
+            tab1.style.width = '';
              $('#tab1').css('border-top-color', '#cacfd300 !important');
             tab2Title.classList.add('hidden');
         }
