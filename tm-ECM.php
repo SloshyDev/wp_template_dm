@@ -345,13 +345,14 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     <div class="flex  justify-between">
 <h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
         <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
-        <h1 id='tab2Title' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
+        <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
         <div id="tab2" style="border-left-color: #cacfd3;"  class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
     </div>
     <img id='met1' class='metImg' src="<?php the_field('met1'); ?>" alt="">
     <img id='met2' class='metImg hidden' src="<?php the_field('met2'); ?>" alt="">
     <img id='met3' class='metImg hidden' src="<?php the_field('met3'); ?>" alt="">
     <img id='met4' class='metImg hidden' src="<?php the_field('met4'); ?>" alt="">
+    <img id='met5' class='metImg hidden' src="<?php the_field('met5'); ?>" alt="">
     <div class="bg-[#DA8F3B] md:py-4">
         <div class="mx-4 flex flex-col md:flex-row">
             <div id='t1'
@@ -1035,19 +1036,19 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
         let tab2 = document.getElementById('tab2');
-        let tab2Title = document.getElementById('tab2Title');
+        let t5 = document.getElementById('t5');
         let id = $(this).attr('id');
 
         if (id === 't3') {
             tab2.classList.remove('hidden');
             tab1.style.width = '0';
             $('#tab1').css('border-top-color', '#CACFD3 !important');
-            tab2Title.classList.remove('hidden');
+            t5.classList.remove('hidden');
         }else {
             tab2.classList.add('hidden');
             tab1.style.width = '';
              $('#tab1').css('border-top-color', '#cacfd300 !important');
-            tab2Title.classList.add('hidden');
+            t5.classList.add('hidden');
         }
         $('#metTitle').text(text);
         $('.metImg').addClass('hidden');
