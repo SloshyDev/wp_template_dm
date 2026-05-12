@@ -345,7 +345,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     <div class="flex  justify-between">
 <h1 id='metTitle' style="width: 23vw;" class='text-gray-50  bg-[#4b626e] py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("TRANSECTS", 'dm') ?></h1>
         <div id="tab1" class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5"></div>
-        <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
+        <h1 id='t5' style="width: 23vw;background: #CACFD3;" class='text-gray-50 py-4 text-3xl 2xl:text-5xl isBlack m-auto ml-4 md:ml-auto mb-0 text-center hidden' style="margin-bottom: 0 !important;"><?php _e("METHODOLOGY PCU", 'dm') ?></h1>
         <div id="tab2" style="border-left-color: #cacfd3;"  class="border-t-[4rem] border-t-gray-50 dark:border-t-gray-900 border-solid border-l-[5rem] border-l-transparent border-r-0 border-r-transparent h-0 w-8/12 2xl:w-4/5 hidden"></div>
     </div>
     <img id='met1' class='metImg' src="<?php the_field('met1'); ?>" alt="">
