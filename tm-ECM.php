@@ -1040,7 +1040,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         let t5 = document.getElementById('t5');
         let id = $(this).attr('id');
 
-        if (id === 't3' || id === 't5') {
+        if (id === 't3') {
             tab2.classList.remove('hidden');
             tab1.style.width = '0';
             $('#tab1').css('border-top-color', '#CACFD3 !important');
