@@ -339,6 +339,7 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     <img id='met1' class='metImg' src="<?php the_field('met1'); ?>" alt="">
     <img id='met2' class='metImg hidden' src="<?php the_field('met2'); ?>" alt="">
     <img id='met3' class='metImg hidden' src="<?php the_field('met3'); ?>" alt="">
+    <img id='met4' class='metImg hidden' src="<?php the_field('met4'); ?>" alt="">
     <div class="bg-[#DA8F3B] md:py-4">
         <div class="mx-4 flex flex-col md:flex-row">
             <div id='t1'
@@ -360,6 +361,13 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
                 <img class='metIcon z-10 absolute w-11 -ml-[1.3rem] transition-all rounded-full' src="https://datamares.org/wp-content/uploads/2023/03/icon.svg">
                 <img class='w-12 xl:w-auto transition-all rounded-full'
                     src="https://datamares.org/wp-content/uploads/2023/03/Group-2-1.svg" alt="">
+                <h1 class='ml-4 metText'><?php _e("METHODOLOGY", 'dm') ?></h1>
+            </div>
+            <div id='t4'
+                class="flex my-2 metButton cursor-pointer mx-4 lg:mx-8 text-gray-50 isBlack text-lg lg:text-2xl items-center">
+                <img class='metIcon z-10 absolute w-11 -ml-[1.3rem] transition-all rounded-full' src="https://datamares.org/wp-content/uploads/2023/03/icon.svg">
+                <img class='w-12 xl:w-auto transition-all rounded-full'
+                    src="https://datamares.org/wp-content/uploads/2026/05/button.svg" alt="">
                 <h1 class='ml-4 metText'><?php _e("METHODOLOGY", 'dm') ?></h1>
             </div>
         </div>
