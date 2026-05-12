@@ -1030,11 +1030,12 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         $(this).find('.metText').removeClass('text-[#524A4C]');
     });
 
+    $('#tab1').css('border-left-color', '#4b626e !important');
+
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
         let tab2 = document.getElementById('tab2');
         let tab2Title = document.getElementById('tab2Title');
-        $('#tab1').css('border-left-color', '#4b626e !important');
         let id = $(this).attr('id');
 
         if (id === 't3') {
