@@ -32,8 +32,8 @@ background: linear-gradient(180deg, rgba(158,165,33,1) 15%, rgba(22,101,97,1) 10
         the_row();
         $banner1 = get_sub_field('banner');
         $link = get_sub_field('link'); ?>
-            <img class="w-full transition-all hidden" width="1905" height="275"
-                src="<?php echo esc_url($banner1['url']) ?>" alt="<?php echo esc_attr($banner1['alt']); ?>" />
+            <img class="w-full transition-all" width="1905" height="275"
+                src="<?php echo esc_url($banner1['url']) ?>" alt="<?php echo esc_attr($banner1['alt']); ?>" onclick="showModal('filModal')" />
     <?php endwhile; ?>
 <?php endif; ?>
 <?php if (have_rows('banner2')): ?>
@@ -132,6 +132,13 @@ background: linear-gradient(180deg, rgba(158,165,33,1) 15%, rgba(22,101,97,1) 10
 
             <div class="baultNews h-[113vw] snap-y overflow-y-scroll md:h-[47vw]">
                 <?php $interviewsCards = get_field('interviewsCards') ?>
+				
+				<div class="mx-05w mb-06w flex snap-start items-center gap-10w rounded-md p-10w">
+                    <a href="https://www.imer.mx/programas/bandera-y-biodiversidad/" target="_blank">
+						<img style="" class="" src="https://datamares.org/wp-content/uploads/2026/05/Recurso-3.png">
+						</a>
+                </div>
+				
 				
 				<div class="mx-05w mb-06w flex snap-start items-center gap-10w rounded-md p-10w">
                     <a href="https://www.youtube.com/watch?v=BuPTrRV5jJM" target="_blank">
@@ -460,7 +467,7 @@ background: linear-gradient(180deg, rgba(158,165,33,1) 15%, rgba(22,101,97,1) 10
 
     <div class="modalContent z-10 mx-auto">
         <?php $programfil = get_field('program') ?>
-        <img width="447" height="387" style='width: 31vw;' class="mx-auto h-[95%] w-auto" src="https://datamares.org/wp-content/uploads/2025/08/PROGRAMA-DE-ACTIVIDAES-FILUNI-20251.webp" alt="" />
+        <img width="447" height="387" style='width: 31vw;' class="mx-auto h-[95%] w-auto" src="https://datamares.org/wp-content/uploads/2026/04/SEMANA-DE-LITERATURA-Y-CIENCIA-programa.jpg" alt="" />
     </div>
 
     <div class="absolute right-[3vw] top-[3vw] flex gap-10w md:block">
