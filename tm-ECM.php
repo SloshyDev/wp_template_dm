@@ -1037,6 +1037,13 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
         let tab1 = document.getElementById('tab1');
         let tab2 = document.getElementById('tab2');
         let t5 = document.getElementById('t5');
+        let imageId = id;
+        let titleText = text;
+
+        if (id === 't5') {
+            imageId = 't3';
+            titleText = $('#t3 .metText').text().trim();
+        }
 
         if (id === 't3' || id === 't5') {
             tab2.classList.remove('hidden');
@@ -1050,9 +1057,9 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
             t5.classList.add('hidden');
         }
 
-        $('#metTitle').text(text);
+        $('#metTitle').text(titleText);
         $('.metImg').addClass('hidden');
-        $('#me' + id).removeClass('hidden');
+        $('#me' + imageId).removeClass('hidden');
     }
 
     $('.metButton').click(function() {
