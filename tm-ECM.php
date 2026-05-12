@@ -367,8 +367,8 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
                 class="flex my-2 metButton cursor-pointer mx-4 lg:mx-8 text-gray-50 isBlack text-lg lg:text-2xl items-center">
                 <img class='metIcon z-10 absolute w-11 -ml-[1.3rem] transition-all rounded-full' src="https://datamares.org/wp-content/uploads/2023/03/icon.svg">
                 <img class='w-12 xl:w-auto transition-all rounded-full'
-                    src="https://datamares.org/wp-content/uploads/2026/05/button.svg" alt="">
-                <h1 class='ml-4 metText'><?php _e("METHODOLOGY", 'dm') ?></h1>
+                    src="https://datamares.org/wp-content/uploads/2023/03/Group-2-1.svg" alt="">
+                <h1 class='ml-4 metText'><?php _e("SARGASSO METHODOLOGY", 'dm') ?></h1>
             </div>
         </div>
     </div>
@@ -1021,7 +1021,11 @@ $current_lang = ICL_LANGUAGE_CODE; ?>
     $('.metButton').click(function() {
         let text = $(this).find('.metText').text();
         let id = $(this).attr('id');
-        $('#metTitle').text(text);
+        let titleText = text;
+        if (id === 't3') {
+            titleText = text + ' PCU';
+        }
+        $('#metTitle').text(titleText);
         $('.metImg').addClass('hidden');
         $('#me' + id).removeClass('hidden');
     });
