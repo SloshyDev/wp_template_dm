@@ -569,7 +569,7 @@ $anpAzul= get_field('anp-azul');
 <span class="number3" ini="712">712</span>
 </h1>
  </dic>
-   <img src="<?php _e("https://datamares.org/wp-content/uploads/2026/05/Recurso-9.png", 'dm') ?>">
+   <img src="<?php _e("https://datamares.org/wp-content/uploads/2026/05/Recurso-18.svg", 'dm') ?>">
 </section>
 
 <div data-aos="fade-up" class="mt-6 md:mt-12 w-[95.260vw] mx-auto mb-12 md:mb-24">
