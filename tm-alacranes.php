@@ -504,7 +504,7 @@ $anpAzul= get_field('anp-azul');
         </h1>
     </div>
     <div class="mx-[3.2vw] md:mx-[7.2vw] mb-4 flex items-baseline justify-between">
-        <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-8.png" class="w-full" >
+        <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-4-3.svg" class="w-full" >
     </div>
     <div
         class="m-auto grid h-[8vw] md:h-[2.656vw] w-[80vw] grid-cols-6 md:grid-cols-10 md:gap-[.2vw] md:border-[.2vw] gap-[.7vw] border-[.7vw] border-gray-50 bg-gray-50">
@@ -551,7 +551,7 @@ $anpAzul= get_field('anp-azul');
 
 
 <section data-aos="fade-up" data-aos-id="number3"
-    class="bg-[#4c7738] w-11/12 md:w-[95.260vw] mx-auto rounded-3xl md:flex justify-between items-center mt-6">
+    class="bg-[#4c7738] w-11/12 md:w-[95.260vw] mx-auto rounded-3xl md:flex justify-center items-center mt-6">
 	<dic style="
     width: 33vw;
     height: 8vw;
