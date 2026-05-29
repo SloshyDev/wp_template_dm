@@ -615,40 +615,6 @@ $anpAzul= get_field('anp-azul');
                 </div>
             </a>
         </div>
-        <div class="">
-            <a class="group" href="https://escholarship.org/uc/item/4k0014c2" target="_blank">
-                <img width="339" height="187"
-                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-14.png" alt="">
-                <div style="width: fit-content;"
-                    class=" group-hover:bg-[#aeb521] transition-colors  bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
-                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex gap-4 items-center">
-                        <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
-                            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50">Guía de Identificación curvinas<br>en el Alto Golfo de California</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="">
-            <a class="group"
-                href="https://escholarship.org/uc/item/9wk6k2wq"
-                target="_blank">
-                <img width="339" height="187"
-                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-15.png" alt="">
-                <div style="width: fit-content;"
-                    class=" group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
-                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
-                        <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
-                            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50">Advanced Acoustic Technologies for the Monitoring<br>and Management of Sustainable Fisheries: A Practice Manual
-</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-		
 		<div class="">
             <a class="group" href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2020.583056/full?s=09" target="_blank">
                 <img width="630" height="298"
