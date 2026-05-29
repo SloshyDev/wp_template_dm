@@ -354,8 +354,8 @@ $anpAzul= get_field('anp-azul');
             
         </div>
         <div class="w-full rounded-l-3xl my-8 md:m-0 bg-[#aeb521] rounded-r-3xl md:rounded-r-none px-2 md:px-6 py-2">
-            <div class="flex gap-3 justify-center items-center" style="margin-right: 5vw;">
-                <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-2-5.svg" alt="">
+            <div class="flex gap-3 justify-center items-center" >
+                <img style="margin:1rem;" src="https://datamares.org/wp-content/uploads/2026/05/Recurso-2-5.svg" alt="">
             </div>
             <div class="h-1 rounded-xl w-full bg-[#005f7e]"></div>
             <div class="mt-1 md:mt-4 " style="margin-left:1vw;">
@@ -1631,7 +1631,7 @@ document.addEventListener("aos:in:bar", ({ detail }) => {
     bar.setAttribute('style', 'width:1vw')
     anime({
         targets: '#bar',
-        width: '8vw',
+        width: '7.3vw',
         duration: 10000,
         easing: "easeOutQuint",
     });
