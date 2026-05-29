@@ -355,16 +355,21 @@ $anpAzul= get_field('anp-azul');
         </div>
         <div class="w-full rounded-l-3xl my-8 md:m-0 bg-[#aeb521] rounded-r-3xl md:rounded-r-none px-2 md:px-6 py-2">
             <div class="flex gap-3 justify-center items-center" style="margin-right: 5vw;">
-                <img style="margin:1vw;width:8.6vw;"
-                    src="https://datamares.org/wp-content/uploads/2025/02/Asset-2.svg" alt="">
-                <h1 class="MBlack text-[#4c7738] text-6m md:text-5xl leading-none text-center md:text-start">
-                    <?php echo esc_html(get_field('dataMap1')); ?>
-                </h1>
+                <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-2-5.svg" alt="">
             </div>
             <div class="h-1 rounded-xl w-full bg-[#005f7e]"></div>
             <div class="mt-1 md:mt-4 " style="margin-left:1vw;">
                 <div class="flex gap-2 md:gap-6 items-cente text-gray-50 MBlackCondensed">
-                    <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-2-5.svg" alt="">
+                    <img class="w-[11.5vw] md:w-[4.531vw] my-auto"
+                        src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/temperatura.svg" alt="">
+                    <div class="">
+                        <h1 class="text-[11vw] md:text-6m leading-none">
+                            <?php echo esc_html(get_field('annualTemperature')); ?> °C
+                        </h1>
+                        <h1 class="text-6m md:text-8xl leading-none">
+                            <?php _e("MEAN ANNUAL TEMPERATURE", 'dm') ?>
+                        </h1>
+                    </div>
                 </div>
                 <div class="flex gap-2 md:gap-6 items-cente text-gray-50 MBlackCondensed">
                     <img class="w-[11.5vw] md:w-[4.531vw] my-auto"
