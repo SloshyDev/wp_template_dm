@@ -692,9 +692,9 @@ $anpAzul= get_field('anp-azul');
         <h1 class="MBlack text-[6vw] md:text-1m text-gray-50 text-center md:text-start"><?php _e("SOURCES", 'dm') ?></h1>
 
         <div class="mb-4 md:my-8 text-white">
-            <p class="text-15w GFLINK MBold"><a class="GFLINK" href="• https://simec.conanp.gob.mx/ficha.php?anp=61&reg=9" target="_blank"
+            <p class="text-15w GFLINK MBold"><a class="GFLINK" href="https://simec.conanp.gob.mx/ficha.php?anp=61&reg=9" target="_blank"
             rel="noopener noreferrer">
-            • https://simec.conanp.gob.mx/ficha.php?anp=61&reg=9</a></p><br>
+            • https://simec.conanp.gob.mx/ficha.php?anp=61&amp;reg=9</a></p><br>
     <p class="text-15w GFLINK MBold">
 <a class="GFLINK"
             href="https://simec.conanp.gob.mx/pdf_libro_pm/61_libro_pm.pdf" target="_blank"
