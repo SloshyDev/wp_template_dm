@@ -78,6 +78,10 @@
         font-style: normal;
         font-display: swap
     }
+	
+.GFLINK:hover {
+    color: #aeb520 !important;
+}
 
     .MBold {
         font-family: "myriad-pro", sans-serif;
@@ -318,7 +322,7 @@ $anpAzul= get_field('anp-azul');
                 class="flex items-center transition-transform hover:scale-105">
                 <img width="60" height="60" class="w-[6vw] md:w-[3.125vw]"
                     src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="" />
-                <h1 class="MBlackCondensed ml-4 text-6m md:text-3xl leading-none text-gray-50">
+                <h1 class="MBlackCondensed ml-4 text-6m md:text-3xl text-gray-50">
                     <?php _e("VISIT OUR NPA HOME PAGE", 'dm') ?>
                 </h1>
             </a>
@@ -352,7 +356,7 @@ $anpAzul= get_field('anp-azul');
         <div class="w-full rounded-l-3xl my-8 md:m-0 bg-[#aeb521] rounded-r-3xl md:rounded-r-none px-2 md:px-6 py-2">
             <div class="flex gap-3 justify-center items-center" style="margin-right: 5vw;">
                 <img style="margin:1vw;width:8.6vw;"
-                    src="https://datamares.org/wp-content/uploads/2025/03/Asset-15.svg" alt="">
+                    src="https://datamares.org/wp-content/uploads/2025/02/Asset-2.svg" alt="">
                 <h1 class="MBlack text-[#4c7738] text-6m md:text-5xl leading-none text-center md:text-start">
                     <?php echo esc_html(get_field('dataMap1')); ?>
                 </h1>
@@ -388,7 +392,24 @@ $anpAzul= get_field('anp-azul');
     </div>
     <div class="w-full  md:px-0 md:w-1/2">
         <div class="flex justify-start flex-col">
-           <img src='<?php _e("https://datamares.org/wp-content/uploads/2025/03/Asset-6.svg", 'dm') ?>'>
+            <div>
+             <?php the_field('map');  ?>
+            </div>
+            <div class="maps">
+                
+                <div class="hidden last:block m3">
+                    <img width="877" height="1164" class="w-11/12 md:mx-0 md:w-[45.677vw]"
+                        src="<?php the_field('mapab');  ?>" alt="" />
+                </div>
+                <div class="hidden last:block m4">
+                    <img width="877" height="1164" class="w-11/12 md:mx-0 md:w-[45.677vw]"
+                        src="<?php the_field('mapab');  ?>" alt="" />
+                </div>
+				<div class="hidden last:block m1">
+                    <img width="877" height="1164" class="w-11/12 md:mx-0 md:w-[45.677vw]"
+                        src="<?php the_field('mapab');  ?>" alt="" />
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -487,12 +508,7 @@ $anpAzul= get_field('anp-azul');
         </h1>
     </div>
     <div class="mx-[3.2vw] md:mx-[7.2vw] mb-4 flex items-baseline justify-between">
-        <img width="97" height="97" class="w-[10vw] md:w-[5.052vw]"
-            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/0proteccion.svg" alt="" />
-        <img width="52" height="52" class="w-[7vw] md:w-[2.708vw]"
-            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/5proteccion.svg" alt="" />
-        <img width="97" height="97" class="w-[10vw] md:w-[5.052vw]"
-            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/1proteccion.svg" alt="" />
+        <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-8.png" class="w-full" >
     </div>
     <div
         class="m-auto grid h-[8vw] md:h-[2.656vw] w-[80vw] grid-cols-6 md:grid-cols-10 md:gap-[.2vw] md:border-[.2vw] gap-[.7vw] border-[.7vw] border-gray-50 bg-gray-50">
@@ -536,220 +552,33 @@ $anpAzul= get_field('anp-azul');
     </div>
 </div>
 
-<section data-aos="fade-up"
-    class="my-4 md:my-14 md:mx-2 flex-col md:flex-row justify-center  flex gap-2 md:justify-around">
-    <div class="flex items-center justify-center md:justify-start gap-3 md:gap-6">
-        <img width="143" height="168" class="w-[18vw] md:w-[7.448vw]"
-            src="<?php echo $anpAzul?>" alt="" />
-        <h1 class="MBlackCondensed text-[7vw] md:text-8m text-[#4c7738]">
-            <?php _e("MARINE BIODIVERSITY", 'dm') ?>
-        </h1>
-    </div>
-    <div class="flex flex-col items-center mt-2 md:mt-auto gap-2 md:gap-6">
-        <div
-            class="group flex w-11/12 md:w-[42.604vw] cursor-pointer buttonMeta justify-center md:justify-start items-center gap-2 rounded-3xl bg-secondary4 py-4 shadow-lg px-4">
-            <img width="77" height="77" class="w-[10vw] md:w-[4.010vw] transition-transform group-hover:scale-105"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/datos.svg" alt="" />
-            <h1 class="MBlack text-[3.5vw] md:text-8xl text-gray-50 transition-colors group-hover:text-[#aeb521]">
-                <?php _e("REVIEW THE METADATA", 'dm') ?>
-            </h1>
-        </div>
-        <div
-            class="group flex w-11/12 md:w-[42.604vw] cursor-pointer items-center gap-2 rounded-3xl bg-secondary4 py-4 shadow-lg px-4">
-            <img width="77" height="77" class="w-[10vw] md:w-[4.010vw] transition-transform group-hover:scale-105"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/datos.svg" alt="" />
-            <a href="<?php _e("https://datamares.org/ecological_monitoring/", 'dm') ?>"
-                class="MBlack text-[3.5vw] md:text-8xl text-gray-50 transition-colors group-hover:text-[#aeb521]">
-                <?php _e("VISIT THE ECOLOGICAL MONITORING HOME PAGE", 'dm') ?>
-            </a>
-        </div>
-    </div>
-</section>
 
-<section data-aos="fade-up" data-aos-id="number2"
-    class="bg-[#4c7738] w-11/12 md:w-[95.260vw] mx-auto rounded-3xl md:flex items-center py-6">
-    <div class="">
-        <div class="flex justify-center md:justify-start gap-4 md:ml-6 mx-4 md:mx-0 pb-4 md:pb-12">
-            <img width="78" height="78" class="w-[13vw] md:w-[4.063vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/biomasa.svg" alt="" />
-            <div class="text-gray-50">
-                <h1 class="text-[6vw] md:text-1m MBlack leading-none">
-                    <?php _e("RELATIVE BIOMASS", 'dm') ?>
-                </h1>
-                <h1 class="text-6m md:text-3xl md:w-[22.396vw] leading-none">
-                    <?php echo esc_html(get_field('relativeBiomass')); ?>
-                </h1>
-            </div>
-        </div>
-        <div class="flex">
-            <div class="w-3/5 md:w-[30.208vw] bg-gray-50 h-[20vw] md:h-[6.354vw] flex items-center">
-                <img width="78" height="78" class="w-[13vw] md:w-[4.063vw] ml-4 mr-4"
-                    src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/arrecifes.svg" alt="" />
-                <div class=" MBlack text-[#007080]">
-                    <h1 class="text-[6vw] md:text-1m leading-none"><span class="number3"
-                            ini="<?php echo esc_html(get_field('numberOfReefs')); ?>">
-                            <?php echo esc_html(get_field('numberOfReefs')); ?>
-                        </span> <span class="text-6m md:text-5xl leading-none">
-                            <?php _e("REEFS", 'dm') ?>
-                        </span></h1>
-                    <h1 class="text-6m md:text-5xl leading-none ">
-                        <?php _e("MONITORED", 'dm') ?>
-                    </h1>
-                </div>
-            </div>
-            <div
-                class="w-0 h-0 border-t-[10vw] md:border-t-[3.18vw] border-l-[5vw] md:border-l-[2vw] border-b-[10vw] md:border-b-[3.18vw] border-y-transparent border-l-gray-50">
-            </div>
-        </div>
-    </div>
-    <div class="flex items-center justify-center mx-auto md:mx-0 w-3/4 md:w-[27%]">
-        <img width="147" height="147" class="absolute w-[20vw] md:w-[7.656vw] z-10"
-            src="https://datamares.org/wp-content/uploads/2023/11/datapie.svg" alt="" />
-        <div id="arrecifes2" class="w-full"></div>
-    </div>
-    <div class="w-3/4 md:w-auto mx-auto">
-        <div class="flex gap-4 items-center justify-end">
-            <h1 class="MBoldCondensed text-gray-50 text-8m md:text-5xl">
-                <?php _e("PISCIVORES", 'dm') ?>
-            </h1>
-            <img width="56" height="56" class=" w-[8vw] md:w-[2.917vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/piscivoros.svg" alt="" />
-            <div class="flex items-center w-[22.5vw] md:w-[11.979vw]">
-                <div class="hidden">
-                    <div class="bg-gray-50 h-[6vw] w-[.1vw]"></div>
-                    <div
-                        class="w-0 h-0 border-t-[.7vw] border-t-transparent border-l-[.7vw] border-l-gray-50 border-b-[.7vw] border-b-transparent">
-                    </div>
-                </div>
-                <h1 class="text-[10vw] md:text-9m MBlackCondensed leading-none text-gray-50"><span class="number2"
-                        ini="<?php echo esc_html(get_field('dataPiscivores')); ?>">
-                        <?php echo esc_html(get_field('dataPiscivores')); ?>
-                    </span><span class="opacity-0 transition-opacity">%</span></h1>
-            </div>
-
-        </div>
-        <div class="flex gap-4 items-center justify-end">
-            <h1 class="MBoldCondensed text-gray-50 text-8m md:text-5xl">
-                <?php _e("CARNIVORES", 'dm') ?>
-            </h1>
-            <img width="56" height="56" class=" w-[8vw] md:w-[2.917vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/carnivoros.svg" alt="" />
-            <div class="flex items-center w-[22.5vw] md:w-[11.979vw]">
-                <div class="hidden">
-                    <div class="bg-gray-50 h-[6vw] w-[.1vw]"></div>
-                    <div
-                        class="w-0 h-0 border-t-[.7vw] border-t-transparent border-l-[.7vw] border-l-gray-50 border-b-[.7vw] border-b-transparent">
-                    </div>
-                </div>
-                <h1 class="text-[10vw] md:text-9m MBlackCondensed leading-none text-gray-50"><span class="number2"
-                        ini="<?php echo esc_html(get_field('dataCarnivores')); ?>">
-                        <?php echo esc_html(get_field('dataCarnivores')); ?>
-                    </span><span class="opacity-0 transition-opacity">%</span></h1>
-            </div>
-
-        </div>
-        <div class="flex gap-4 items-center justify-end">
-            <h1 class="MBoldCondensed text-gray-50 text-8m md:text-5xl">
-                <?php _e("HERBIVORES", 'dm') ?>
-            </h1>
-            <img width="56" height="56" class=" w-[8vw] md:w-[2.917vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/herbivoros.svg" alt="" />
-            <div class="flex items-center w-[22.5vw] md:w-[11.979vw]">
-                <div class="hidden">
-                    <div class="bg-gray-50 h-[6vw] w-[.1vw]"></div>
-                    <div
-                        class="w-0 h-0 border-t-[.7vw] border-t-transparent border-l-[.7vw] border-l-gray-50 border-b-[.7vw] border-b-transparent">
-                    </div>
-                </div>
-                <h1 class="text-[10vw] md:text-9m MBlackCondensed leading-none text-gray-50"><span class="number2"
-                        ini="<?php echo esc_html(get_field('dataHerbivores')); ?>">
-                        <?php echo esc_html(get_field('dataHerbivores')); ?>
-                    </span><span class="opacity-0 transition-opacity">%</span></h1>
-            </div>
-
-        </div>
-        <div class="flex gap-4 items-center justify-end">
-            <h1 class="MBoldCondensed text-gray-50 text-8m md:text-5xl">
-                <?php _e("ZOOPLANKTIVORES", 'dm') ?>
-            </h1>
-            <img width="56" height="56" class=" w-[8vw] md:w-[2.917vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/zooplanctivoros.svg" alt="" />
-            <div class="flex items-center w-[22.5vw] md:w-[11.979vw]">
-                <div class="hidden">
-                    <div class="bg-gray-50 h-[6vw] w-[.1vw]"></div>
-                    <div
-                        class="w-0 h-0 border-t-[.7vw] border-t-transparent border-l-[.7vw] border-l-gray-50 border-b-[.7vw] border-b-transparent">
-                    </div>
-                </div>
-                <h1 class="text-[10vw] md:text-9m MBlackCondensed leading-none text-gray-50"><span class="number2"
-                        ini="<?php echo esc_html(get_field('dataZooplanktivores')); ?>">
-                        <?php echo esc_html(get_field('dataZooplanktivores')); ?>
-                    </span><span class="opacity-0 transition-opacity">%</span></h1>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <section data-aos="fade-up" data-aos-id="number3"
-    class="bg-[#4c7738] w-11/12 md:w-[95.260vw] mx-auto rounded-3xl md:flex justify-between items-center py-6 mt-6">
-    <div class="">
-        <div class="flex justify-center md:justify-start gap-4 md:ml-6 mx-4 md:mx-0 pb-4 md:pb-12">
-            <img width="78" height="78" class="w-[13vw] md:w-[4.063vw]"
-                src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/riqueza.svg" alt="" />
-            <div class="text-gray-50">
-                <h1 class="text-[6vw] md:text-1m MBlack leading-none">
-                    <?php _e("RICHNESS", 'dm') ?>
-                </h1>
-                <h1 class="text-6m md:text-3xl md:w-[22.396vw] leading-none">
-                    <?php echo esc_html(get_field('richness')); ?>
-                </h1>
-            </div>
-        </div>
-        <div class="flex">
-            <div
-                class="w-3/5 md:w-[30.208vw] bg-gray-50 h-[22vw] md:h-[14.688vw] flex flex-col justify-center items-center ">
-                <h1 class="text-[6vw] md:text-4m MBlack text-[#007080] leading-none">
-                    <?php _e("TOTAL RICHNESS", 'dm') ?>
-                </h1>
-                <div class="flex items-center">
-                    <img width="166" height="79" class="w-[22vw] md:w-[8.646vw] ml-6 mr-4"
-                        src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/invypec.svg" alt="" />
-                    <div class=" MBlack text-[#007080]">
+    class="bg-[#4c7738] w-11/12 md:w-[95.260vw] mx-auto rounded-3xl md:flex justify-between items-center mt-6">
+	<dic style="
+    width: 33vw;
+    height: 8vw;
+    position: fixed;
+    top: 0;
+    right: 4vw;
+    background: #003c3a;
+    border-radius: 0vw 1vw 2vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+">
+     <h1 class="text-[6vw] md:text-4m MBlack leading-none text-white "><?php _e("TOTAL", 'dm') ?>: 
 
-                        <h1 class="text-[8vw] md:text-8m leading-none number3"
-                            ini="<?php echo esc_html(get_field('dataRichness')); ?>">
-                            <?php echo esc_html(get_field('dataRichness')); ?>
-                        </h1>
-                        <h1 class="text-[3vw] md:text-5xl leading-none ">
-                            <?php _e("INVERTEBRATES", 'dm') ?>
-                            <br>
-                            <?php _e("AND FISHES", 'dm') ?>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="w-0 h-0 border-t-[11vw] md:border-t-[7.4vw] border-l-[6vw] md:border-l-[3vw] border-b-[11vw] md:border-b-[7.4vw] border-y-transparent border-l-gray-50">
-            </div>
-        </div>
-    </div>
-    <div class="w-11/12 mx-auto md:mx-0 md:w-[62%]">
-        <div class="flex items-center justify-center h-[50vw] md:h-[19vw] mr-4">
-            <div id="riqueza" class="w-full"></div>
-        </div>
-    </div>
-
-
-
+<span class="number3" ini="790">790</span>
+</h1>
+ </dic>
+   <img src="<?php _e("https://datamares.org/wp-content/uploads/2026/05/Recurso-9.png", 'dm') ?>">
 </section>
 
 <div data-aos="fade-up" class="mt-6 md:mt-12 w-[95.260vw] mx-auto mb-12 md:mb-24">
-    <h1
-        class='MBlackCondensed text-[7vw] md:text-6m text-[#4c7738] leading-none md:mb-12 mb-6 md:pl-8 text-center md:text-start'>
-        <?php _e("VISIT OUR SECTION", 'dm') ?>
-    </h1>
-    <a href="https://datamares.org/atlas-de-buceo/?lang=es">
+   
+    <a href="https://datamares.org/perfil-de-especie-pargo-amarillo/?lang=es">
         <?php if (get_field('diveAtlas')): ?>
             <img width="1830" height="501"
                 class="w-11/12 md:w-[95.260vw] mx-auto  shadow-xl rounded-3xl hover:scale-[1.02] transition-transform"
@@ -759,112 +588,128 @@ $anpAzul= get_field('anp-azul');
     </a>
 </div>
 
+<style>
+	@media (min-width: 768px) {
+    .md\:w-\[17\.135vw\] {
+        height: 18.135vw;
+        width: auto;
+    }
+}
+</style>
+
 <div data-aos="fade-up" class="bg-[#4c7738] py-16 px-8">
     <div class="flex items-center justify-center md:justify-start gap-4">
         <img width="127" height="96" class="w-[16vw] md:w-[6.615vw]"
             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/exc.svg" alt="">
-        <h1 class="MBlack text-[6vw] md:text-8xl text-gray-50">
-            <?php _e("YOU MIGHT LIKE", "dm") ?>
-        </h1>
+        <h1 class="MBlack text-[6vw] md:text-8xl text-gray-50"><?php _e("YOU MIGHT LIKE", 'dm') ?></h1>
     </div>
-	<style>
-	.border-8 {
-    border-width: 5px;
-}
-	</style>
-	
-    <div class="flex justify-around" style="gap:3vw">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
         <div class="">
-            <a class="group" href="<?php _e("https://datamares.org/preview/dp_sea-lion/", "dm") ?>" target="_blank">
-                <img width="339" height="187" style="height:18vw; width:auto;"
-                    class="shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="<?php _e("https://datamares.org/wp-content/uploads/2024/10/dataPoster-CALIFORNIA_SEA_LION.webp", "dm") ?>" alt="">
+            <a class="group" href="https://datamares.org/preview/dp_totoaba/?lang=es" target="_blank">
+                <img width="339" height="187"
+                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
+                    src="https://datamares.org/wp-content/uploads/2024/10/dataPoster-TOTOABA.webp" alt="">
                 <div
                     class="w-11/12 md:w-[16.510vw] group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("dataPoster California sea lion", "dm") ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("dataPóster TOTOABA", 'dm') ?></h1>
                     </div>
                 </div>
             </a>
         </div>
-      
-
-            <a class="group" href="https://escholarship.org/uc/item/0f17f69p" target="_blank">
-                <img height="350" style="height:18vw; width:auto;"
-                    class="shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2025/03/Asset-14.webp" alt="">
-                <div style="width: 18.51vw;"
-                    class="w-11/12 group-hover:bg-[#aeb521] transition-colors  bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
+        <div class="">
+            <a class="group" href="https://escholarship.org/uc/item/4k0014c2" target="_blank">
+                <img width="339" height="187"
+                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-14.png" alt="">
+                <div style="width: fit-content;"
+                    class=" group-hover:bg-[#aeb521] transition-colors  bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex gap-4 items-center">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50">Eficacia de las áreas marinas
-protegidas de uso múltiple</h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50">Guía de Identificación curvinas<br>en el Alto Golfo de California</h1>
                     </div>
                 </div>
             </a>
-			<a class="group" href="<?php _e("https://datamares.org/preview/parrotfishes/", "dm") ?>" target="_blank">
-                <img height="350" style="height:18vw; width:auto;"
-                    class="shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="<?php _e("https://datamares.org/wp-content/uploads/2024/10/dataPoster-PARROTFISHES.webp", "dm") ?>" alt="">
-                <div style="width: 15.51vw;"
-                    class="w-11/12 group-hover:bg-[#aeb521] transition-colors  bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
-                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex gap-4 items-center">
+        </div>
+        <div class="">
+            <a class="group"
+                href="https://escholarship.org/uc/item/9wk6k2wq"
+                target="_blank">
+                <img width="339" height="187"
+                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-15.png" alt="">
+                <div style="width: fit-content;"
+                    class=" group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
+                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("dataPoster Parrotfishes", "dm") ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50">Advanced Acoustic Technologies for the Monitoring<br>and Management of Sustainable Fisheries: A Practice Manual
+</h1>
                     </div>
                 </div>
             </a>
-			<a class="group" href="https://datamares.org/preview/arrecifes-rocosos-2023/?lang=es" target="_blank">
-                <img height="350" style="height:18vw; width:auto;"
-                    class="shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="<?php _e("https://datamares.org/wp-content/uploads/2024/09/RockyReef-report.webp", "dm") ?>" alt="">
-                <div style="width: 18.51vw;"
-                    class="w-11/12 group-hover:bg-[#aeb521] transition-colors  bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
-                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex gap-4 items-center">
+        </div>
+		
+		<div class="">
+            <a class="group" href="https://datamares.org/perfil-de-especie-totoaba/?lang=es  
+" target="_blank">
+                <img width="630" height="298"
+                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-17.png" alt="">
+                <div
+                    class="w-11/12 md:w-[16.510vw] group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
+                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Rocky Reef Monitoring Program, 2023 Campaign", "dm") ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Perfil de especie Totoaba", 'dm') ?></h1>
                     </div>
                 </div>
             </a>
-			
-        
+        </div>
+		
+		<div class="">
+            <a class="group" href="https://datamares.org/perfil-de-especie-curvina/?lang=es" target="_blank">
+                <img width="630" height="298"
+                    class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-16.png" alt="">
+                <div style="width: fit-content;"
+                    class=" group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
+                    <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
+                        <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
+                            src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Perfil de especie curvina golfina
+", 'dm') ?></h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+		
     </div>
+	
+	<style>
+	.text-15w {
+  font-size: 1.5vw;
+}
+	</style>
     <div class="md:mt-4">
-        <h1 class="MBlack text-[6vw] md:text-1m text-gray-50 text-center md:text-start">
-            <?php _e("SOURCES", "dm") ?>
-        </h1>
+        <h1 class="MBlack text-[6vw] md:text-1m text-gray-50 text-center md:text-start"><?php _e("SOURCES", 'dm') ?></h1>
 
-        <div class="mb-4 md:my-8" style="
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-">
-
-			<a href="https://simec.conanp.gob.mx/ficha.php?anp=141"
-                class="Mbold text-gray-50 text-9m text-center md:text-start md:text-4xl flex justify-center md:justify-start"
-                target="_blank" rel="noopener noreferrer">
-                • https://simec.conanp.gob.mx/ficha.php?anp=141
-            </a>
-			<a href="https://simec.conanp.gob.mx/pdf_libro_pm/141_libro_pm.pdf"
-                class="Mbold text-gray-50 text-9m text-center md:text-start md:text-4xl flex justify-center md:justify-start"
-                target="_blank" rel="noopener noreferrer">
-               • https://simec.conanp.gob.mx/pdf_libro_pm/141_libro_pm.pdf
-            </a>
-
-
-			
-
+        <div class="mb-4 md:my-8 text-white">
+            <p class="text-15w GFLINK MBold"><a class="GFLINK" href="• https://simec.conanp.gob.mx/ficha.php?anp=2&reg=11" target="_blank"
+            rel="noopener noreferrer">
+            • https://simec.conanp.gob.mx/ficha.php?anp=2&reg=11</a></p><br>
+    <p class="text-15w GFLINK MBold">
+<a class="GFLINK"
+            href="• https://www.conanp.gob.mx/que_hacemos/pdf/programas_manejo/Final_AltoGolfo.pdf
+" target="_blank"
+            rel="noopener noreferrer">• https://www.conanp.gob.mx/que_hacemos/pdf/programas_manejo/Final_AltoGolfo.pdf
+</a></p><br>
         </div>
-        <h1 class="text-gray-50 MBold text-9m md:text-4xl leading-none text-center md:text-start">
-            <?php _e("UPDATE", "dm") ?>: <br class="md:hidden"> <span class="MBlack text-[#aeb521]">
-               <?php _e("MARCH 2025", "dm") ?> 
-            </span>
-        </h1>
+        <h1 class="text-gray-50 MBold text-9m md:text-4xl leading-none text-center md:text-start"><?php _e("UPDATE", 'dm') ?>: <br
+                class="md:hidden"> <span class="MBlack text-[#aeb521]"><?php _e("MAYO 2026", 'dm') ?></span></h1>
     </div>
 </div>
 
@@ -1517,7 +1362,7 @@ protegidas de uso múltiple</h1>
     <button class="modal-close is-large close" aria-label="close"></button>
 </div>
 <?php get_footer(); ?>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/splide.min.css" />
 <script
@@ -1526,57 +1371,278 @@ protegidas de uso múltiple</h1>
 
 
 
-<script src="<?php bloginfo('template_url'); ?>/js/rev.js"></script>
 <script>
-	
-	
+let numbers
+
+
+
+document.addEventListener("aos:in:number1", ({ detail }) => {
+    numbers = document.getElementsByClassName('number1')
+    for (let index = 0; index < numbers.length; index++) {
+        const element = numbers[index];
+        anime({
+            targets: element,
+            duration: 5000,
+            easing: "easeOutQuart",
+            round: 100,
+            update: function (anim) {
+                numberWithCommas(element, remocecoma(element.innerHTML));
+            },
+            end: function (anim) {
+                numberWithCommas(element, remocecoma(element.innerHTML));
+            },
+            innerHTML: [0, remocecoma(element.innerHTML)]
+        });
+    }
+});
+
+document.addEventListener("aos:in:number3", ({ detail }) => {
+    numbers = document.getElementsByClassName('number3')
+    for (let index = 0; index < numbers.length; index++) {
+        const element = numbers[index];
+        anime({
+            targets: element,
+            duration: 3000,
+            easing: "easeInOutCubic",
+            round: 1,
+            update: function (anim) {
+                numberWithCommas(element, remocecoma(element.innerHTML));
+            },
+            end: function (anim) {
+                numberWithCommas(element, remocecoma(element.innerHTML));
+            },
+            innerHTML: [0, remocecoma(element.getAttribute('ini'))]
+        });
+    }
+});
+
+
+
+document.addEventListener("aos:in:number2", ({ detail }) => {
+    numbers = document.getElementsByClassName('number2')
+    let por = document.getElementsByClassName('transition-opacity')
+    for (let index = 0; index < por.length; index++) {
+        const element = por[index];
+
+        if (element.classList) {
+            element.classList.remove('opacity-100')
+            element.classList.add('opacity-0')
+        }
+
+    }
+    for (let index = 0; index < numbers.length; index++) {
+        const element = numbers[index];
+        anime({
+            targets: element,
+            duration: 4000,
+            easing: "easeOutExpo",
+            round: 10,
+            update: function (anim) {
+                numberWithCommas(element, remocecoma(element.innerHTML));
+            },
+            complete: function (anim) {
+                for (let index = 0; index < por.length; index++) {
+                    const element = por[index];
+
+                    if (element.classList) {
+                        element.classList.remove('opacity-0')
+                        element.classList.add('opacity-100')
+                    }
+
+                }
+            },
+            innerHTML: [0, remocecoma(element.getAttribute('ini'))]
+        });
+    }
+
+});
+
+
 document.addEventListener("aos:in:bar", ({ detail }) => {
     let bar = document.getElementById('bar')
     bar.setAttribute('style', 'width:1vw')
     anime({
         targets: '#bar',
-        width: '2vw',
+        width: '10vw',
         duration: 10000,
         easing: "easeOutQuint",
     });
 });
 
+
+
+function remocecoma(val) {
+    var val = val.replace(/,/g, '')
+    return parseFloat(val)
+}
+function numberWithCommas(tarjet, x) {
+    x = x.toString();
+    var pattern = /(-?\d+)(\d{3})/;
+    while (pattern.test(x))
+        x = x.replace(pattern, "$1,$2");
+    tarjet.innerHTML = x
+
+}
+
+var atractivos = new Splide('#atractivos', {
+    type: 'loop',
+    breakpoints: {
+        1024: {
+            perPage: 4,
+        },
+        767: {
+            perPage: 1,
+        },
+    },
+    perPage: 4,
+    perMove: 1,
+    rewind: true,
+    pagination: false,
+    autoplay: true,
+    arrowPath: 'M18.7778 4L36 20L18.7778 36M5 4L22.2222 20L5 36'
+});
+
+atractivos.mount();
+
+var amenazas = new Splide('#amenazas', {
+    type: 'loop',
+    breakpoints: {
+        1024: {
+            perPage: 4,
+        },
+        767: {
+            perPage: 1,
+        },
+    },
+    perPage: 4,
+    perMove: 1,
+    rewind: true,
+    pagination: false,
+    autoplay: true,
+    arrowPath: 'M18.7778 4L36 20L18.7778 36M5 4L22.2222 20L5 36'
+});
+
+amenazas.mount();
+
+
+var carrousel = new Splide('#carrousel', {
+    type: 'loop',
+    breakpoints: {
+        1024: {
+            perPage: 4,
+        },
+        767: {
+            perPage: 1,
+        },
+    },
+    perPage: 4,
+    perMove: 1,
+    rewind: true,
+    pagination: false,
+    autoplay: true,
+    arrowPath: 'M18.7778 4L36 20L18.7778 36M5 4L22.2222 20L5 36'
+});
+
+carrousel.mount();
+
+function changeCarrousel(target) {
+
+    target = document.getElementById(target)
+    vSplide = document.getElementsByClassName('splide')
+
+    for (let index = 0; index < vSplide.length; index++) {
+        const element = vSplide[index];
+
+        element.classList.add('hidden')
+
+    }
+
+    if (target.classList) {
+        target.classList.remove('hidden')
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+onDOMContentLoaded = (event) => {
+
+
+    //Setting up the logics of submenus
+
+    let hasChildren = document.getElementsByClassName('menu-item-has-children')
+
+
+    for (let i = 0; i < hasChildren.length; i++) {
+        const children = hasChildren[i];
+        const dropItem = children.getElementsByClassName('dropd')[0].innerHTML
+        const dropDown = document.createElement('div')
+        const ul = document.createElement('ul')
+        let nested = children.classList.contains('nested')
+
+        if (children.classList) {
+            children.classList.add(nested ? 'group/Nested' : 'group/Main', 'flex-col', 'md:flex-row', 'flex', 'z-10')
+        }
+
+        if (ul.classList) {
+            ul.classList.add('navbar-dropdown', 'dropd')
+        }
+
+        if (dropDown.classList) {
+            dropDown.setAttribute('class', nested ? 'md:p-0 md:pl-2 -mt-1 group-hover/Nested:block left-[100%] hidden md:absolute' : 'pt-2 md:pt-10 group-hover/Main:block hidden md:absolute')
+        }
+
+        var elem = document.querySelector('#dropDownArrow');
+        var clone = elem.cloneNode(true);
+
+        ul.innerHTML = dropItem
+        dropDown.appendChild(ul)
+        children.appendChild(dropDown)
+
+        children.getElementsByClassName('dropd')[0].remove()
+
+        clone.setAttribute('class', nested ? 'group-hover/Nested:rotate-180 group-hover/Nested:transition-transform' : 'group-hover/Main:rotate-180' + ' hidden transition-transform')
+        children.appendChild(clone)
+
+
+
+        if (clone.classList) {
+            clone.classList.remove('hidden')
+        }
+
+    }
+
+
+
+
+};
+
+
+
+</script>
+<script>
+document.addEventListener("aos:in:bar", ({ detail }) => {
+    let bar = document.getElementById('bar')
+    bar.setAttribute('style', 'width:1vw')
+    anime({
+        targets: '#bar',
+        width: '8vw',
+        duration: 10000,
+        easing: "easeOutQuint",
+    });
+});
     function changeMap(tarjet) {
       $(".maps").append($('.' + tarjet))
     }
-	
-	
-	
-	var options = {
-    series: [16.6, 30.8, 32.6, 20],
-    chart: {
-        type: 'pie',
-    },
-    plotOptions: {
-        pie: {
-            customScale: 1
-        }
-    },
-    fill: {
-        colors: ['#5ac1dc', '#aeb521', '#003c3a', '#f18e1d']
-    },
-    legend: {
-        show: false,
-    },
-    stroke: {
-        show: true,
-        colors: '#f9fafb',
-        width: 8,
-        dashArray: 0,
-    },
-    dataLabels: {
-        enabled: false,
-    }
-};
-
-var chart2 = new ApexCharts(document.querySelector("#arrecifes2"), options);
-
-chart2.render();
 	
 	var options = {
     chart: {
@@ -1589,21 +1655,16 @@ chart2.render();
     series: [{
         data: [{
             x: '<?php _e("INVERTEBRATES", "dm") ?>',
-            y: 95,
+            y: 50,
             fillColor: '#e1e1bd',
         }, {
             x: '<?php _e("FISHES", "dm") ?>',
-            y: 117,
+            y: 83,
             fillColor: '#e1e1bd',
         },]
     }]
 };
 
-var riqueza = new ApexCharts(document.querySelector("#riqueza"), options);
-riqueza.render();
-			$('.buttonMeta').click(function (e) { 
-    $('.modal').addClass('is-active');    
-});
 
 $('.close').click(function (e) { 
     $('.modal').removeClass('is-active');  
