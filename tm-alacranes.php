@@ -601,16 +601,16 @@ $anpAzul= get_field('anp-azul');
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
         <div class="">
-            <a class="group" href="https://datamares.org/preview/dp_totoaba/?lang=es" target="_blank">
+            <a class="group" href="https://datamares.org/preview/dp_arrecifes-de-coral/?lang=es" target="_blank">
                 <img width="339" height="187"
                     class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2024/10/dataPoster-TOTOABA.webp" alt="">
+                    src="https://datamares.org/wp-content/uploads/2026/05/dataPoster-ECOSISTEMA-ARRECIFE-CORALINO-V2.webp" alt="">
                 <div
                     class="w-11/12 md:w-[16.510vw] group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("dataPóster TOTOABA", 'dm') ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("dataPóster ECOSISTEMA ARRECIFE CORALINO", 'dm') ?></h1>
                     </div>
                 </div>
             </a>
@@ -650,34 +650,32 @@ $anpAzul= get_field('anp-azul');
         </div>
 		
 		<div class="">
-            <a class="group" href="https://datamares.org/perfil-de-especie-totoaba/?lang=es  
-" target="_blank">
+            <a class="group" href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2020.583056/full?s=09" target="_blank">
                 <img width="630" height="298"
                     class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-17.png" alt="">
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-16.webp" alt="">
                 <div
                     class="w-11/12 md:w-[16.510vw] group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Perfil de especie Totoaba", 'dm') ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Being Isolated and Protected Is Better Than Just Being Isolated: A Case Study From the Alacranes Reef, Mexico", 'dm') ?></h1>
                     </div>
                 </div>
             </a>
         </div>
 		
 		<div class="">
-            <a class="group" href="https://datamares.org/perfil-de-especie-curvina/?lang=es" target="_blank">
+            <a class="group" href="https://www.youtube.com/watch?v=glkA9T9w82c" target="_blank">
                 <img width="630" height="298"
                     class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
-                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-16.png" alt="">
+                    src="https://datamares.org/wp-content/uploads/2026/05/Recurso-15.webp" alt="">
                 <div style="width: fit-content;"
                     class=" group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
-                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Perfil de especie curvina golfina
-", 'dm') ?></h1>
+                        <h1 class="MBlack text-9m md:text-xl text-gray-50"><?php _e("Ecosistema marino ¿Aislado o Protegido?", 'dm') ?></h1>
                     </div>
                 </div>
             </a>
@@ -694,14 +692,13 @@ $anpAzul= get_field('anp-azul');
         <h1 class="MBlack text-[6vw] md:text-1m text-gray-50 text-center md:text-start"><?php _e("SOURCES", 'dm') ?></h1>
 
         <div class="mb-4 md:my-8 text-white">
-            <p class="text-15w GFLINK MBold"><a class="GFLINK" href="• https://simec.conanp.gob.mx/ficha.php?anp=2&reg=11" target="_blank"
+            <p class="text-15w GFLINK MBold"><a class="GFLINK" href="• https://simec.conanp.gob.mx/ficha.php?anp=61&reg=9" target="_blank"
             rel="noopener noreferrer">
-            • https://simec.conanp.gob.mx/ficha.php?anp=2&reg=11</a></p><br>
+            • https://simec.conanp.gob.mx/ficha.php?anp=61&reg=9</a></p><br>
     <p class="text-15w GFLINK MBold">
 <a class="GFLINK"
-            href="• https://www.conanp.gob.mx/que_hacemos/pdf/programas_manejo/Final_AltoGolfo.pdf
-" target="_blank"
-            rel="noopener noreferrer">• https://www.conanp.gob.mx/que_hacemos/pdf/programas_manejo/Final_AltoGolfo.pdf
+            href="https://simec.conanp.gob.mx/pdf_libro_pm/61_libro_pm.pdf" target="_blank"
+            rel="noopener noreferrer">• https://simec.conanp.gob.mx/pdf_libro_pm/61_libro_pm.pdf
 </a></p><br>
         </div>
         <h1 class="text-gray-50 MBold text-9m md:text-4xl leading-none text-center md:text-start"><?php _e("UPDATE", 'dm') ?>: <br
