@@ -364,16 +364,7 @@ $anpAzul= get_field('anp-azul');
             <div class="h-1 rounded-xl w-full bg-[#005f7e]"></div>
             <div class="mt-1 md:mt-4 " style="margin-left:1vw;">
                 <div class="flex gap-2 md:gap-6 items-cente text-gray-50 MBlackCondensed">
-                    <img class="w-[11.5vw] md:w-[4.531vw] my-auto"
-                        src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/temperatura.svg" alt="">
-                    <div class="">
-                        <h1 class="text-[11vw] md:text-6m leading-none">
-                            <?php echo esc_html(get_field('annualTemperature')); ?> °C
-                        </h1>
-                        <h1 class="text-6m md:text-8xl leading-none">
-                            <?php _e("MEAN ANNUAL TEMPERATURE", 'dm') ?>
-                        </h1>
-                    </div>
+                    <img src="https://datamares.org/wp-content/uploads/2026/05/Recurso-2-5.svg" alt="">
                 </div>
                 <div class="flex gap-2 md:gap-6 items-cente text-gray-50 MBlackCondensed">
                     <img class="w-[11.5vw] md:w-[4.531vw] my-auto"
@@ -570,7 +561,7 @@ $anpAzul= get_field('anp-azul');
 ">
      <h1 class="text-[6vw] md:text-4m MBlack leading-none text-white "><?php _e("TOTAL", 'dm') ?>: 
 
-<span class="number3" ini="790">790</span>
+<span class="number3" ini="712">712</span>
 </h1>
  </dic>
    <img src="<?php _e("https://datamares.org/wp-content/uploads/2026/05/Recurso-9.png", 'dm') ?>">
