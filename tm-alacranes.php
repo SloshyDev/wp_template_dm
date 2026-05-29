@@ -655,7 +655,7 @@ $anpAzul= get_field('anp-azul');
                     class="w-11/12 md:w-[17.135vw] shadow-xl mx-auto border-gray-50 border-4 rounded-xl group-hover:scale-105 transition-transform"
                     src="https://datamares.org/wp-content/uploads/2026/05/Recurso-16.webp" alt="">
                 <div
-                    class="w-11/12 md:w-[16.510vw] group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
+                    class="group-hover:bg-[#aeb521] transition-colors bg-secondary4 border-[#aeb521] border-8 mb-12 md:mb-auto mt-8 rounded-3xl mx-auto">
                     <div class="border-gray-50 border-4 p-2 rounded-2xl flex items-center gap-4">
                         <img width="47" height="47" class="w-[8vw] md:w-[2.448vw]"
                             src="<?php bloginfo('template_url'); ?>/img/CaboPulmo/cursor.svg" alt="">
