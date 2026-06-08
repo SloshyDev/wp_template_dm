@@ -158,7 +158,7 @@
     <div class="mx-auto flex flex-col justify-between gap-15w md:w-1/4">
         <div class="flex h-full flex-col justify-around rounded-lg border-4 border-blue-400 bg-blue-400 hover:scale-105 transition-transform">
             <h1 class="my-12w text-center font-myriad text-2xl font-black text-yellow-100 md:text-16w is-uppercase"><?php echo _e('Latest News', 'dm'); ?></h1><?php $image = get_field('marquesina-image') ?>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd9YLt-ANr_mBDKnWdxPmlgalg2OyDAyL9R0Zb2v5Q8suU8Xg/viewform?pli=1" target="_blank">
+<a href="https://www.eluniversal.com.mx/opinion/comunidad-1-5/conservacion-marina-bienestar-comunitario-y-futuro-costero-para-mexico/" target="_blank">
 			<img width="447" height="387" class="w-full" src="<?php echo $image['url'] ?>" alt="" />
 			</a>
         </div>
