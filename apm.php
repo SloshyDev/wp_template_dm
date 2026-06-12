@@ -101,7 +101,7 @@
             <div class="splide__track" style="padding-inline: 3vw !important;">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <a href="https://datamares.org/preview/dp_restauracion-marina/?lang=es" target="_blank" rel="noopener noreferrer">
+                        <a href="<?php _e("https://datamares.org/preview/dp_marine-restoration/", 'dm') ?>" target="_blank" rel="noopener noreferrer">
                             <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2026/06/Recurso-1-4.webp", 'dm') ?>" alt="">
                         </a>
                     </li>
