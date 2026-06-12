@@ -101,6 +101,16 @@
             <div class="splide__track" style="padding-inline: 3vw !important;">
                 <ul class="splide__list">
                     <li class="splide__slide">
+                        <a href="https://datamares.org/preview/dp_restauracion-marina/?lang=es" target="_blank" rel="noopener noreferrer">
+                            <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2026/06/Recurso-1-4.webp", 'dm') ?>" alt="">
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="https://www.eluniversal.com.mx/opinion/comunidad-1-5/conservacion-marina-bienestar-comunitario-y-futuro-costero-para-mexico/" target="_blank" rel="noopener noreferrer">
+                            <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2026/06/Recurso-2-4.webp", 'dm') ?>" alt="">
+                        </a>
+                    </li>
+                    <li class="splide__slide">
                         <a href="https://elpais.com/mexico/2026-02-16/el-movimiento-de-cientificos-mexicanos-que-promueve-las-areas-de-prosperidad-marina.html" target="_blank" rel="noopener noreferrer">
                             <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2026/02/Recurso-2-5.png", 'dm') ?>" alt="">
                         </a>
