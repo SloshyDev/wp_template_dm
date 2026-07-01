@@ -135,6 +135,11 @@
                             <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2025/12/News4-N@1.5x.webp", 'dm') ?>" alt="">
                         </a>
                     </li>
+                    <li class="splide__slide">
+                        <a href="https://www.eluniversal.com.mx/comunicados/el-universal-gana-segundo-lugar-en-premios-de-la-red-de-periodismo-de-soluciones-reconocen-investigacion-sobre-golfo-de-california/" target="_blank" rel="noopener noreferrer">
+                            <img class="hover:scale-105 mx-auto transition-transform duration-200 w-[21vw]" src="<?php _e("https://datamares.org/wp-content/uploads/2026/07/Recurso-3.webp", 'dm') ?>" alt="">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
