@@ -50,7 +50,7 @@ background: linear-gradient(180deg, rgba(158,165,33,1) 15%, rgba(22,101,97,1) 10
         the_row();
         $banner = get_sub_field('banner');
         $link = get_sub_field('link'); ?>
-            <img  class="w-full hidden" width="1905" height="275"
+            <img  class="w-full" width="1905" height="275"
                 src="<?php echo esc_url($banner['url']) ?>" alt="<?php echo esc_attr($banner['alt']); ?>" />
     <?php endwhile; ?>
 <?php endif; ?>
