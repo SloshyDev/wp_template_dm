@@ -45,6 +45,15 @@ background: linear-gradient(180deg, rgba(158,165,33,1) 15%, rgba(22,101,97,1) 10
                 src="<?php echo esc_url($banner['url']) ?>" alt="<?php echo esc_attr($banner['alt']); ?>" />
     <?php endwhile; ?>
 <?php endif; ?>
+<?php if (have_rows('banner3')): ?>
+    <?php while (have_rows('banner3')):
+        the_row();
+        $banner = get_sub_field('banner3');
+        $link = get_sub_field('link'); ?>
+            <img  class="w-full hidden" width="1905" height="275"
+                src="<?php echo esc_url($banner['url']) ?>" alt="<?php echo esc_attr($banner['alt']); ?>" />
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
 <!-- Cards and Interviews -->
